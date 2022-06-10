@@ -1,7 +1,8 @@
 // business logic
-arrayInputNumbers = []
+
+let arrayInputNumbers = []
 function beepBoop(numberInput) {
-arrayInputNumbers === numberInput
+arrayInputNumbers = numberInput
 }
 return arrayInputNumbers();
 
