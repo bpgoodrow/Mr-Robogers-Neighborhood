@@ -2,13 +2,13 @@
 
 let arrayInputNumbers = []
 function beepBoop(numberInput) {
-  arrayInputNumbers = numberInput
   for (let i = 0; i <= numberInput; i+=1)
   console.log(i)
-    // const numberInput = i.toString()
-    if(numberInput.includes(1)) {
+    const newInput = numberInput.toString();
+    if(newInput.includes(1)) {
       arrayInputNumbers.push("Beep!")
     }
+  return arrayInputNumbers;
 }
 
 
