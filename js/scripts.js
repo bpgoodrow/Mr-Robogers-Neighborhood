@@ -3,14 +3,15 @@
 let arrayInputNumbers = []
 function beepBoop(numberInput) {
 arrayInputNumbers = numberInput
+for (let i = 0; numberInput; i+=1)
+console.log(i)
 }
-return arrayInputNumbers();
 
 
-const array = [0, 1, 2, 3, 4, 5]
-array.array.forEach(function(number) {
-  console.log(number);
-});
+// const array = [0, 1, 2, 3, 4, 5]
+// array.array.forEach(function(number) {
+//   console.log(number);
+// });
 
 
 // UI logic
