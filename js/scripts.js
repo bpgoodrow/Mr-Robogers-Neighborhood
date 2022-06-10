@@ -3,8 +3,7 @@
 let arrayInputNumbers = []
 function beepBoop(numberInput) {
   for (let i = 0; i <= numberInput; i+=1)
-  console.log(i)
-    const newInput = numberInput.toString();
+    newInput = numberInput.toString();
     if(newInput.includes(1)) {
       arrayInputNumbers.push("Beep!")
     } if(newInput.includes(2)) {
@@ -21,5 +20,7 @@ $(document).ready(function() {
   $("form#numberInput").submit(function(event) {
     $("form#numberInput").trigger("reset");
     $("#returnInput").hide();
+    const returnedNumbers = arrayInputNumbers;
+
   })
 })
