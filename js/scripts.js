@@ -3,7 +3,7 @@
 let arrayInputNumbers = []
 function beepBoop(numberInput) {
 arrayInputNumbers = numberInput
-for (let i = 0; numberInput; i+=1)
+for (let i = 0; i <= numberInput -1; i+=1)
 console.log(i)
 }
 
