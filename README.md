@@ -38,9 +38,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Tests
 
-Describe: 
+Describe: beepBoop()
 
-Test:
-Code:
-const text =
-Expected Output: 
+Test:"It should return an array of numbers from 0 to the users inputted number"
+Code: beepBoop(5)
+Expected Output: [0, 1, 2, 3, 4, 5]
