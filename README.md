@@ -51,3 +51,8 @@ Expected Output: [0, 1, 2, 3, 4, 5]
 Test:"It should return "Beep!" for every value if inputted number includes 1"
 Code: beepBoop(1)
 Expected Output: ["Beep!"]
+
+Test:"It should return "Boop!" for every value if inputted number includes 2:
+Code: beepBoop(2)
+Expected Output: ["Boop!]
+

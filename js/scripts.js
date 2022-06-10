@@ -7,6 +7,8 @@ function beepBoop(numberInput) {
     const newInput = numberInput.toString();
     if(newInput.includes(1)) {
       arrayInputNumbers.push("Beep!")
+    } if(newInput.includes(2)) {
+      arrayInputNumbers.push("Boop!")
     }
   return arrayInputNumbers;
 }
