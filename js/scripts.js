@@ -17,10 +17,9 @@ function beepBoop(numberInput) {
 
 // UI logic
 $(document).ready(function() {
-  $("form#numberInput").submit(function(event) {
+  $("form#numberInput").submit(function(event){
     event.preventDefault();
-    $("#returnInput").hide();
     const userNumber = $("#userNumber").val();
-
+    $("#returnInput").html(beepBoop(numberInput))
   })
 })
