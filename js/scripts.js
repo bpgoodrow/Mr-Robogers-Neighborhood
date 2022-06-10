@@ -3,15 +3,16 @@
 let arrayInputNumbers = []
 function beepBoop(numberInput) {
 arrayInputNumbers = numberInput
-for (let i = 0; i <= numberInput -1; i+=1)
+for (let i = 0; i <= numberInput; i+=1)
 console.log(i)
 }
-
-
-// const array = [0, 1, 2, 3, 4, 5]
-// array.array.forEach(function(number) {
-//   console.log(number);
-// });
+arrayInputNumbers
 
 
 // UI logic
+$(document).ready(function() {
+  $("form#numberInput").submit(function(event) {
+    $("form#numberInput").trigger("reset");
+    $("#returnInput").hide();
+  })
+})
