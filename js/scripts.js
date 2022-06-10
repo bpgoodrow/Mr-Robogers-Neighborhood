@@ -18,9 +18,9 @@ function beepBoop(numberInput) {
 // UI logic
 $(document).ready(function() {
   $("form#numberInput").submit(function(event) {
-    $("form#numberInput").trigger("reset");
+    event.preventDefault();
     $("#returnInput").hide();
-    const returnedNumbers = arrayInputNumbers;
+    const userNumber = $("#userNumber").val();
 
   })
 })
