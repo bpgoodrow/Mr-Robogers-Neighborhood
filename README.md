@@ -23,7 +23,9 @@ This web application with gather number input from the user and return substitut
 * Additionally open [https://bpgoodrow.github.io/mr-robogers-neighborhood/](https://wwww.bpgoodrow.github.io/mr-robogers-neighborhood/) in your web browser.
 
 ## Known Bugs
-* N/A
+* Does not return substituted user values
+* Does not return value for each digit of user input
+* Does not return string "Won't you be my neighbor?" in place of all digits if 3 is entered.
 
 ## License
 MIT
