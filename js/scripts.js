@@ -9,6 +9,8 @@ function beepBoop(numberInput) {
       arrayInputNumbers.push("Beep!")
     } if(newInput.includes(2)) {
       arrayInputNumbers.push("Boop!")
+    } if (newInput.includes(3)) {
+      arrayInputNumbers.push("Won't you be my neighbor?")
     }
   return arrayInputNumbers;
 }

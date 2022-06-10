@@ -48,11 +48,14 @@ Test:"It should return an array of numbers from 0 to the users inputted number"
 Code: beepBoop(5)
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test:"It should return "Beep!" for every value if inputted number includes 1"
+Test:"It should return "Beep!" for every value if inputted number includes 1.
 Code: beepBoop(1)
 Expected Output: ["Beep!"]
 
-Test:"It should return "Boop!" for every value if inputted number includes 2:
+Test:"It should return "Boop!" for every value if inputted number includes 2.
 Code: beepBoop(2)
 Expected Output: ["Boop!]
 
+Test:"It should return "Won't you be my neighbor?" if inputted number includes 3.
+Code: beepBoop(3)
+Expected Output: ["Won't you be my neighbor?"]
