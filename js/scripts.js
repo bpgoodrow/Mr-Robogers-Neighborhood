@@ -5,6 +5,7 @@ function beepBoop(numberInput) {
   for (let i = 0; i <= numberInput; i+=1)
     newInput = numberInput.toString();
     if(newInput.includes(1)) {
+
       arrayInputNumbers.push("Beep!")
     } if(newInput.includes(2)) {
       arrayInputNumbers.push("Boop!")
@@ -12,6 +13,8 @@ function beepBoop(numberInput) {
       arrayInputNumbers.push("Won't you be my neighbor?")
     }
   return arrayInputNumbers;
+
+
 }
 
 
@@ -21,5 +24,6 @@ $(document).ready(function() {
     event.preventDefault();
     const userNumber = $("#userNumber").val();
     $("#returnInput").html(beepBoop(numberInput));
+    return beepBoop(numberInput);
   });
 });
