@@ -1,7 +1,7 @@
 // business logic
 
-let arrayInputNumbers = []
 function beepBoop(numberInput) {
+  let arrayInputNumbers = []
   for (let i = 0; i <= numberInput; i+=1)
     newInput = numberInput.toString();
     if(newInput.includes(1)) {
@@ -20,6 +20,6 @@ $(document).ready(function() {
   $("form#numberInput").submit(function(event){
     event.preventDefault();
     const userNumber = $("#userNumber").val();
-    $("#returnInput").html(beepBoop(numberInput))
-  })
-})
+    $("#returnInput").html(beepBoop(numberInput));
+  });
+});
