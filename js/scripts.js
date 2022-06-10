@@ -2,11 +2,11 @@
 
 let arrayInputNumbers = []
 function beepBoop(numberInput) {
-arrayInputNumbers = numberInput
-for (let i = 0; i <= numberInput; i+=1)
-console.log(i)
+  arrayInputNumbers = numberInput
+  for (let i = 0; i <= numberInput; i+=1)
+  console.log(i)
+    const numberInput = i.toString()
 }
-arrayInputNumbers
 
 
 // UI logic
