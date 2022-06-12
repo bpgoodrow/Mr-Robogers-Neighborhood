@@ -9,7 +9,6 @@ function beepBoop(numberInput) {
     } else if (newInput.includes("2")) {
       arrayInputNumbers.push("Boop!")
     } else if (newInput.includes("1")) {
-      console.log("Pushing: Beep!")
       arrayInputNumbers.push("Beep!")
     } else {
       arrayInputNumbers.push(i)
@@ -20,10 +19,13 @@ function beepBoop(numberInput) {
 
 // UI logic
 $(document).ready(function () {
-  $("form#numberInput").submit(function (event) {
+
+  // Register Event Handler
+  $("#numberInput").submit(function (event) {
     event.preventDefault();
     const userNumber = $("#userNumber").val();
-    $("#returnInput").html(beepBoop(numberInput));
-    return beepBoop(numberInput);
+    const words = beepBoop($("#userNumber").val());
+    $("#returnInput").html("<p>" + words + "</p>");
+    return;
   });
 });
