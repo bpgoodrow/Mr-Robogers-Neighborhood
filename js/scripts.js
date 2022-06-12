@@ -2,25 +2,22 @@
 
 function beepBoop(numberInput) {
   let arrayInputNumbers = []
-  for (let i = 0; i <= numberInput; i+=1)
+  for (let i = 0; i <= numberInput; i++) {
     newInput = numberInput.toString();
-    if(newInput.includes(1)) {
-
-      arrayInputNumbers.push("Beep!")
-    } if(newInput.includes(2)) {
-      arrayInputNumbers.push("Boop!")
-    } if (newInput.includes(3)) {
+    if (newInput.includes("3")) {
       arrayInputNumbers.push("Won't you be my neighbor?")
+    } else if(newInput.includes("2")) {
+      arrayInputNumbers.push("Boop!")
+    } else if(newInput.includes("1")) {
+      arrayInputNumbers.push("Beep!")
     }
-  return arrayInputNumbers;
-
-
+    return arrayInputNumbers;
+  }
 }
 
-
 // UI logic
-$(document).ready(function() {
-  $("form#numberInput").submit(function(event){
+$(document).ready(function () {
+  $("form#numberInput").submit(function (event) {
     event.preventDefault();
     const userNumber = $("#userNumber").val();
     $("#returnInput").html(beepBoop(numberInput));

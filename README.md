@@ -65,3 +65,7 @@ Expected Output: ["Won't you be my neighbor?"]
 Test: "It should replace all digits of number if number includes 3 with "Won't you be my neighbor?"."
 Code: beepBoop(31)
 Expected Output: ["Won't you be my neighbor?"]
+
+Test: "Order of precedence is "won't you be my neighbor?", "Boop!", "Beep!".
+Code: beepBoop(31)
+Expected Output: ["Won't you be my neighbor?"]
