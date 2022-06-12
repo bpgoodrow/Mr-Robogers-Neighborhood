@@ -69,3 +69,7 @@ Expected Output: ["Won't you be my neighbor?"]
 Test: "Order of precedence is "won't you be my neighbor?", "Boop!", "Beep!".
 Code: beepBoop(31)
 Expected Output: ["Won't you be my neighbor?"]
+
+Test: "It should return substitutions for every value of index up to numberInput"
+Code: beepBoop(5)
+Expected Outpout: ["Beep!", "Boop!", "Won't you be my neighbor?", "4", "5"]
