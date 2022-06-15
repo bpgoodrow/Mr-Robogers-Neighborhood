@@ -1,5 +1,3 @@
-// business logic
-
 function beepBoop(numberInput) {
   let arrayInputNumbers = []
   for (let i = 0; i <= numberInput; i++) {
@@ -17,10 +15,8 @@ function beepBoop(numberInput) {
   return arrayInputNumbers;
 }
 
-// UI logic
 $(document).ready(function () {
 
-  // Register Event Handler
   $("#numberInput").submit(function (event) {
     event.preventDefault();
     const userNumber = $("#userNumber").val();
